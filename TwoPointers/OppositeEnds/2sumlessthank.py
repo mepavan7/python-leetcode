@@ -12,7 +12,7 @@ def twosumlessthank(A, k):
             r -= 1   
     return best
     
-#print(twosumlessthank([34, 23, 1, 24, 75, 33, 54, 8], 60))
-print(twosumlessthank([10, 20, 30], 15))
+print(twosumlessthank([34, 23, 1, 24, 75, 33, 54, 8], 60))
+#print(twosumlessthank([10, 20, 30], 15))
          
         

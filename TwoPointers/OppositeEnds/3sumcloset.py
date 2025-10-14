@@ -21,6 +21,10 @@ def three_Sum_Closest(ar, t):
     closest_sum = 0
     ar.sort()
     for i in range(len(ar)):
+         # --- OPTIMIZATION ADDED HERE ---
+        # If the current number is the same as the one before it, skip it.
+        if i > 0 and ar[i] == ar[i-1]:
+            continue
         l, r = i+1, len(ar) - 1
         while l < r:
               curr_sum =  ar[i] + ar[l] + ar[r]
@@ -35,7 +39,8 @@ def three_Sum_Closest(ar, t):
                 r -= 1
     return closest_sum
 print(three_Sum_Closest([-1,2,1,-4], 1))
-        
+print(three_Sum_Closest([1, 1, 1, 0], 100))      
+print(three_Sum_Closest([-4, -1, 1, 2], 1))      
         
          
                 

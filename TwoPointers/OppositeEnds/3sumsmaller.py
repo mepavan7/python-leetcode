@@ -31,6 +31,6 @@ def threesumsmaller(nums, target):
             else: # Simplified from elif
                 r -= 1
     return count
-                
+print(threesumsmaller([-2, 0, 1, 3], 2))               
                 
         
